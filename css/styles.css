@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.wrapper {
+    background-color: #FAFAFA;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #F78460;
+}
+
+h1,
+h2,
+h3,
+main,
+p{
+    margin: 0;
+    padding: 15px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li a {
+    background-color: white;
+    display: block;
+    margin: 5px 0;
+    padding: 10px 0;
+}
+
+header {
+    padding-bottom: 30px;
+}
+
+header img {
+    margin: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F78460;
+    font-weight: bold;
+}
+
+.student {
+    float: left;
+}
+
+.back-to-top {
+    float: right;
+}
+
+footer nav {
+    display: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        float: left;
+    }
+    ul {
+        float: right
+    }  
+    li, li a {
+        display: inline-block;
+        padding-left: 10px;
+        background-color: inherit;
+    }
+    header p {
+        float: left;
+        max-width: 45%;
+        padding-top: 0;
+        text-align: left;
+    }
+    header img {
+        float: right;
+        width: 45%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .one, .three, .five{
+        float: left;
+        padding: 5px;
+        max-width: 50%;
+        min-height: 400px;
+        
+    }
+    .two, .four, .six{
+        float: right;
+        padding: 5px;
+        max-width: 50%;
+        min-height: 400px;
+
+    }
+    
+    #services article {
+        float: left;
+        width: 50%;
+    }
+
+    .contact {
+        width: 75%;
+        margin: 0 auto;
+    }
+    footer nav {
+        display: block;
+    }
+    footer ul,
+    footer li{
+        margin: 0;
+    }
+    .back-to-top {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+  
+    .one, .two, .three{
+        float: left;
+        max-width: 33%;
+        min-height: 400px;
+        
+    }
+    .four, .five, .six{
+        float: right;
+        max-width: 33%;
+        min-height: 400px;
+
+    }
+   
+}
